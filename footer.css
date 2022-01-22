@@ -1,0 +1,24 @@
+.footer {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;    
+}
+
+.footer > .container_wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.co_info {
+    color: #999999;
+    margin-bottom: 3px;
+}
+
+.icon >a {
+    color: black;
+    margin-right: 5px;
+}
+
+.icon > a > i:hover{
+    color: orange;
+}

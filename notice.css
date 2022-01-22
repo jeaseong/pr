@@ -1,0 +1,80 @@
+/* cs, review */
+.cs, .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 1024px;
+}
+
+.cs > .content_title,
+.review > .content_title,
+.service > .content_title {
+    text-align: center;
+}
+
+.cs_img {
+    margin-top: 50px;
+}
+/* bubble */
+
+
+
+.bubble_box {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.review_bubble {
+    width: 80%;
+    background-color: white;
+    border-radius: 20px 30px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+}
+.review_bubble:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 25px solid;
+    border-color: white transparent transparent transparent;
+    top: 100%;
+    right: 10%;
+    position: absolute;
+}
+.review_bubble:nth-child(2):after {
+    left: 10%;
+    right: 0;
+
+}
+
+
+.review_bubble:nth-child(2) {
+    width: 90%;
+}
+
+.review_des, .content_des {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.cs > .content_des {
+    width: 100%;
+    text-align: left;
+}
+
+

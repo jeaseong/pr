@@ -1,0 +1,202 @@
+/* 공통 부분 */
+
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding-top: 80px;
+
+}
+section.home {
+    padding-top: 150px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.content_title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.content_des {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+.hilight {
+    color: orange;
+}
+
+/* Home */
+.img_box {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.home >.content_title {
+    
+    position: relative;
+}
+.home > .content_title:after {
+    position: absolute;
+    content: "";
+    top: -60px;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/html.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-radius:50%;
+}
+.home > .content_title:before {
+    position: absolute;
+    content: "";
+    top: -70px;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/css.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-radius:50%;
+}
+
+/* choice */
+
+.select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice {
+    background-image: url(./img/react.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
+}
+
+.choice_box {
+    width: 48%;
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    
+    
+}
+.choice_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    margin: 20px 0 ;
+    text-align: center;
+}
+
+
+.choice_list-item {
+    width: 100%;
+    margin-bottom: 14px;
+    font-size: 20px;
+    padding: 20px;
+}
+.choice_list-item:hover {
+    background-color: #ffedce;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event > .content_title {
+    text-align: center;
+}
+
+
+
+.content_img, .service_img, .home_img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* personal, carousel */
+
+
+
+.carousel-container {
+    width: 50%;
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+}
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    right: 2%;
+}
+.prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    left: 2%;
+}
+
+.carousel-slides {
+    display: flex;
+    width: 100%;
+    
+}
+
+.personal_list {
+    margin-top: 50px;
+}
+.personal_container {
+    min-width: 100%; 
+}
+
+.personal_img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.personal_title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.personal_title-sub {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.personal_price {
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
